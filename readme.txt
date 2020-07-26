@@ -1,3 +1,5 @@
+# go vscode setting.
+
 {
     "go.buildOnSave": true,
     "go.lintOnSave": true,
@@ -18,3 +20,6 @@
     "go.gopath": "/Users/lukeh/go",
     "go.gocodeAutoBuild": false
 }
+
+
+https://golang.org/pkg/
