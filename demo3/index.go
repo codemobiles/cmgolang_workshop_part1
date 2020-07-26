@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"time"
+	"fmt"
+)
+
+var count int = 0;
 
 func main(){
 	fmt.Println("Begin");
@@ -28,4 +33,15 @@ func main(){
 	fmt.Println(tmp5);
 	fmt.Println(tmp6);
 
+	count++
+	fmt.Println(count);
+	run();
+	run();
+	run();
+}
+
+func run()  {
+	count++
+	fmt.Println(count);
+	// fmt.Println(tmp6);
 }
