@@ -10,6 +10,8 @@ func main() {
    p1.price = 100
    p1.stock = 20
    show(p1)
+   update(&p1)
+   show(p1)
 }
 
 type product struct {
@@ -20,4 +22,9 @@ type product struct {
 
 func show(p product){
    fmt.Println(p)
+}
+
+func update(p *product)  {
+   p.price = p.price + 100
+   p.stock = 10   
 }
