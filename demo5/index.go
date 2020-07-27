@@ -13,6 +13,9 @@ func main() {
 
 	x,y := swap(a,b)
 	fmt.Printf("%d,%d => %d,%d\n",a,b, x,y)
+
+	_x,_y,title := swapV2(10,20)
+	fmt.Printf("%d,%d => %d,%d,%s\n",10,20, _x,_y, title)
 }
 
 func fn1(){
@@ -34,6 +37,13 @@ func sum(a int, b int) int{
 
 func swap(a int, b int) (int, int){
 	return b,a
+}
+
+func swapV2(a, b int) (x,y int, title string){
+	y = a
+	x = b
+	title = "Result"
+	return 
 }
 
 
