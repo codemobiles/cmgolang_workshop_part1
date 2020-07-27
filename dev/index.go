@@ -23,6 +23,13 @@ func fnWhile(){
 	}
 }
 
+func fnRange(){
+	a := []string{"angular", "nodejs", "golang"}
+	for index, s := range a{
+		fmt.Println(index,s)
+	}
+}
+
 func main() {
 	fmt.Println("CodeMobiles");
 	helper.Test();
@@ -32,4 +39,5 @@ func main() {
 	helper.Test();
 	fnFor();
 	fnWhile();
+	fnRange();
 }
