@@ -7,6 +7,7 @@ import (
 func main() {
 	fnFor();
 	fnWhile();
+	fnWhileUsingBreak();
 }
 
 func fnFor(){
@@ -19,6 +20,19 @@ func fnWhile(){
 	index := 0
 	for index < 5 {		
 		fmt.Printf("While-Index %d\n", index);
+		index++;
+	}
+}
+
+
+func fnWhileUsingBreak(){
+	index := 0
+	for true {	
+		if index > 5{
+			break
+		} 		
+		
+		fmt.Printf("WhileBreak-Index %d\n", index);
 		index++;
 	}
 }
