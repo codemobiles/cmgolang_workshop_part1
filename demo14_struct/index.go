@@ -12,6 +12,10 @@ func main() {
    show(p1)
    update(&p1)
    show(p1)
+
+   // p1 = p1.clear()
+   p1 = p1.setDiscount(1)
+   show(p1)
 }
 
 type product struct {
@@ -19,6 +23,18 @@ type product struct {
    price int;
    stock int;
 }
+
+func (p product) clear() product{
+   p.price = 0 
+   p.stock = 0
+   return p
+}
+
+func (p product) setDiscount(d int) product {
+   p.price = p.price - d
+   return p
+}
+
 
 func show(p product){
    fmt.Println(p)
