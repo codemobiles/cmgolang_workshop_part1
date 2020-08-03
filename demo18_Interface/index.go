@@ -29,9 +29,13 @@ func getArea(s shape) float64{
 	return s.area()
 }
 
+func showInfo(s shape){
+   
+}
+
 func main() {
 	r := rectangle{width: 10, height: 10}
-	c := circle{radius: 10}
+	c := circle{radius: 10}	
 
 	fmt.Printf("Rectangle: %f\n", getArea(r))
 	fmt.Printf("Circle: %f\n", getArea(c))
