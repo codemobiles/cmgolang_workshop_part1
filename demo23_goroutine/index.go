@@ -18,7 +18,7 @@ func run2()  {
 }
 
 func main() {
-	go run1()
+	go run1()		
 	go run2()
 
 	time.Sleep(5 * time.Second)
