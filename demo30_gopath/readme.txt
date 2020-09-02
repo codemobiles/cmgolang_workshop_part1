@@ -1,0 +1,1 @@
+export GOPATH="/Users/chaiyasit/Desktop/Training/GoProgramming/goonline_2020/workshops/demo30_gopath"
